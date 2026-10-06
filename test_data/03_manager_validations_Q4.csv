@@ -1,0 +1,31 @@
+employee_email,manager_email,Manager rating: expertise uniqueness,Manager rating: documentation gap,Manager rating: project criticality,Manager rating: collaboration dependency,Manager notes for validation
+mohamed@knowledgeguard.demo,sarah@knowledgeguard.demo,4,4,6,6,Successful KT! Mohamed's knowledge is now shared.
+kavindu@knowledgeguard.demo,sarah@knowledgeguard.demo,8,7,8,8,Fully cross-trained. High value asset now.
+shenal@knowledgeguard.demo,sarah@knowledgeguard.demo,1,2,1,1,AWS knowledge is fully democratized.
+dinithi@knowledgeguard.demo,sarah@knowledgeguard.demo,1,2,3,1,Remains stable.
+malithi@knowledgeguard.demo,sarah@knowledgeguard.demo,3,2,1,2,Manager verified: Low risk.
+yasith@knowledgeguard.demo,sarah@knowledgeguard.demo,2,3,2,3,Manager verified: Low risk.
+tharuka@knowledgeguard.demo,sarah@knowledgeguard.demo,9,9,10,10,Manager verified: Critical risk.
+nethmi@knowledgeguard.demo,sarah@knowledgeguard.demo,2,3,3,1,Manager verified: Low risk.
+kasun@knowledgeguard.demo,david@knowledgeguard.demo,3,1,2,1,Manager verified: Low risk.
+supun@knowledgeguard.demo,david@knowledgeguard.demo,4,4,6,6,Manager verified: Medium risk.
+hasitha@knowledgeguard.demo,david@knowledgeguard.demo,8,8,7,7,Manager verified: High risk.
+piumi@knowledgeguard.demo,david@knowledgeguard.demo,2,1,1,1,Manager verified: Low risk.
+lahiru@knowledgeguard.demo,david@knowledgeguard.demo,2,2,1,1,Manager verified: Low risk.
+dulanjali@knowledgeguard.demo,david@knowledgeguard.demo,4,4,6,5,Manager verified: Medium risk.
+sandun@knowledgeguard.demo,david@knowledgeguard.demo,3,3,1,3,Manager verified: Low risk.
+nuwan@knowledgeguard.demo,michael@knowledgeguard.demo,4,5,5,6,Manager verified: Medium risk.
+chamika@knowledgeguard.demo,michael@knowledgeguard.demo,2,3,1,3,Manager verified: Low risk.
+gayani@knowledgeguard.demo,michael@knowledgeguard.demo,7,8,8,7,Manager verified: High risk.
+roshan@knowledgeguard.demo,michael@knowledgeguard.demo,9,9,10,10,Manager verified: Critical risk.
+sachini@knowledgeguard.demo,michael@knowledgeguard.demo,8,7,8,7,Manager verified: High risk.
+ashen@knowledgeguard.demo,michael@knowledgeguard.demo,7,8,7,7,Manager verified: High risk.
+hiruni@knowledgeguard.demo,michael@knowledgeguard.demo,9,9,9,9,Manager verified: Critical risk.
+ruwan@knowledgeguard.demo,michael@knowledgeguard.demo,2,1,2,2,Manager verified: Low risk.
+dilshan@knowledgeguard.demo,emma@knowledgeguard.demo,7,8,7,8,Manager verified: High risk.
+manisha@knowledgeguard.demo,emma@knowledgeguard.demo,10,10,10,9,Manager verified: Critical risk.
+osanda@knowledgeguard.demo,emma@knowledgeguard.demo,5,5,5,6,Manager verified: Medium risk.
+tharindu@knowledgeguard.demo,emma@knowledgeguard.demo,9,9,9,10,Manager verified: Critical risk.
+nimasha@knowledgeguard.demo,emma@knowledgeguard.demo,2,1,2,2,Manager verified: Low risk.
+charith@knowledgeguard.demo,emma@knowledgeguard.demo,8,8,7,8,Manager verified: High risk.
+amila@knowledgeguard.demo,emma@knowledgeguard.demo,1,1,1,2,Manager verified: Low risk.

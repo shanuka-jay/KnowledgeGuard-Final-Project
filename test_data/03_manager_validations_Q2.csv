@@ -1,0 +1,31 @@
+employee_email,manager_email,Manager rating: expertise uniqueness,Manager rating: documentation gap,Manager rating: project criticality,Manager rating: collaboration dependency,Manager notes for validation
+mohamed@knowledgeguard.demo,sarah@knowledgeguard.demo,10,9,10,10,Still critical. We need to start a KT plan immediately.
+kavindu@knowledgeguard.demo,sarah@knowledgeguard.demo,4,6,4,5,Taking on some of Mohamed's workload.
+shenal@knowledgeguard.demo,sarah@knowledgeguard.demo,4,4,4,4,Has started cross-training others.
+dinithi@knowledgeguard.demo,sarah@knowledgeguard.demo,3,2,2,3,Remains stable.
+malithi@knowledgeguard.demo,sarah@knowledgeguard.demo,1,3,2,1,Manager verified: Low risk.
+yasith@knowledgeguard.demo,sarah@knowledgeguard.demo,10,9,9,9,Manager verified: Critical risk.
+tharuka@knowledgeguard.demo,sarah@knowledgeguard.demo,8,8,7,7,Manager verified: High risk.
+nethmi@knowledgeguard.demo,sarah@knowledgeguard.demo,7,7,7,7,Manager verified: High risk.
+kasun@knowledgeguard.demo,david@knowledgeguard.demo,8,8,8,7,Manager verified: High risk.
+supun@knowledgeguard.demo,david@knowledgeguard.demo,9,10,9,10,Manager verified: Critical risk.
+hasitha@knowledgeguard.demo,david@knowledgeguard.demo,3,1,3,2,Manager verified: Low risk.
+piumi@knowledgeguard.demo,david@knowledgeguard.demo,7,8,7,8,Manager verified: High risk.
+lahiru@knowledgeguard.demo,david@knowledgeguard.demo,8,8,7,8,Manager verified: High risk.
+dulanjali@knowledgeguard.demo,david@knowledgeguard.demo,1,2,1,2,Manager verified: Low risk.
+sandun@knowledgeguard.demo,david@knowledgeguard.demo,3,1,3,1,Manager verified: Low risk.
+nuwan@knowledgeguard.demo,michael@knowledgeguard.demo,9,10,9,10,Manager verified: Critical risk.
+chamika@knowledgeguard.demo,michael@knowledgeguard.demo,3,1,3,1,Manager verified: Low risk.
+gayani@knowledgeguard.demo,michael@knowledgeguard.demo,10,10,9,9,Manager verified: Critical risk.
+roshan@knowledgeguard.demo,michael@knowledgeguard.demo,2,1,2,1,Manager verified: Low risk.
+sachini@knowledgeguard.demo,michael@knowledgeguard.demo,6,4,5,4,Manager verified: Medium risk.
+ashen@knowledgeguard.demo,michael@knowledgeguard.demo,10,9,10,10,Manager verified: Critical risk.
+hiruni@knowledgeguard.demo,michael@knowledgeguard.demo,7,8,8,7,Manager verified: High risk.
+ruwan@knowledgeguard.demo,michael@knowledgeguard.demo,1,3,1,3,Manager verified: Low risk.
+dilshan@knowledgeguard.demo,emma@knowledgeguard.demo,7,7,8,8,Manager verified: High risk.
+manisha@knowledgeguard.demo,emma@knowledgeguard.demo,8,7,7,7,Manager verified: High risk.
+osanda@knowledgeguard.demo,emma@knowledgeguard.demo,8,8,7,8,Manager verified: High risk.
+tharindu@knowledgeguard.demo,emma@knowledgeguard.demo,10,10,10,10,Manager verified: Critical risk.
+nimasha@knowledgeguard.demo,emma@knowledgeguard.demo,8,8,7,7,Manager verified: High risk.
+charith@knowledgeguard.demo,emma@knowledgeguard.demo,3,1,2,1,Manager verified: Low risk.
+amila@knowledgeguard.demo,emma@knowledgeguard.demo,9,10,10,10,Manager verified: Critical risk.

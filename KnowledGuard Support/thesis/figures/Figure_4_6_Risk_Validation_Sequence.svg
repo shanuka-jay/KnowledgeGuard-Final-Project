@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1120" viewBox="0 0 1700 1120" role="img" aria-label="KnowledgeGuard risk assessment and manager validation sequence diagram">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#111"/></marker>
+    <marker id="openArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M1,0 L9,3 L1,6" fill="none" stroke="#111" stroke-width="1.4"/></marker>
+    <style>
+      .box{fill:#f3f3f3;stroke:#111;stroke-width:1.6}.life{stroke:#555;stroke-width:1.25;stroke-dasharray:7 6}.act{fill:#ddd;stroke:#111;stroke-width:1.2}.msg{stroke:#111;stroke-width:1.6;marker-end:url(#arrow)}.return{stroke:#111;stroke-width:1.35;stroke-dasharray:6 5;marker-end:url(#openArrow)}.frame{fill:none;stroke:#111;stroke-width:1.5}.label{font:14px Arial,sans-serif;fill:#111}.small{font:13px Arial,sans-serif;fill:#111}.head{font:700 15px Arial,sans-serif;fill:#111;text-anchor:middle}.title{font:700 25px Arial,sans-serif;fill:#111;text-anchor:middle}.alt{font:700 13px Arial,sans-serif;fill:#111}
+    </style>
+  </defs>
+  <rect width="1700" height="1120" fill="#fff"/>
+  <text x="850" y="37" class="title">KnowledgeGuard Risk Assessment and Manager Validation Sequence</text>
+
+  <!-- participants -->
+  <rect x="70" y="70" width="180" height="48" rx="5" class="box"/><text x="160" y="99" class="head">HR User</text>
+  <rect x="310" y="70" width="190" height="48" rx="5" class="box"/><text x="405" y="99" class="head">React/Vite Interface</text>
+  <rect x="565" y="70" width="200" height="48" rx="5" class="box"/><text x="665" y="99" class="head">Node.js/Express Backend</text>
+  <rect x="840" y="70" width="155" height="48" rx="5" class="box"/><text x="917" y="99" class="head">MongoDB</text>
+  <rect x="1070" y="70" width="180" height="48" rx="5" class="box"/><text x="1160" y="99" class="head">FastAPI ML Service</text>
+  <rect x="1370" y="70" width="180" height="48" rx="5" class="box"/><text x="1460" y="99" class="head">Manager</text>
+
+  <line x1="160" y1="118" x2="160" y2="1050" class="life"/><line x1="405" y1="118" x2="405" y2="1050" class="life"/>
+  <line x1="665" y1="118" x2="665" y2="1050" class="life"/><line x1="917" y1="118" x2="917" y2="1050" class="life"/>
+  <line x1="1160" y1="118" x2="1160" y2="1050" class="life"/><line x1="1460" y1="118" x2="1460" y2="1050" class="life"/>
+
+  <!-- import and preliminary score -->
+  <line x1="160" y1="180" x2="405" y2="180" class="msg"/><text x="274" y="169" class="label">1. Upload authorised assessment CSV</text>
+  <rect x="398" y="180" width="14" height="105" class="act"/>
+  <line x1="405" y1="235" x2="665" y2="235" class="msg"/><text x="475" y="224" class="label">2. POST import request</text>
+  <rect x="658" y="235" width="14" height="760" class="act"/>
+  <line x1="665" y1="290" x2="917" y2="290" class="msg"/><text x="724" y="279" class="label">3. Find employee and save assessment</text>
+  <rect x="910" y="290" width="14" height="100" class="act"/>
+  <line x1="917" y1="345" x2="665" y2="345" class="return"/><text x="734" y="334" class="small">assessment record</text>
+  <path d="M672 400 H720 V430 H672" class="msg"/><text x="730" y="417" class="label">4. Map responses and calculate formula score</text>
+
+  <!-- ML alternative -->
+  <rect x="1030" y="465" width="300" height="185" class="frame"/>
+  <path d="M1030 465 H1090 V490 H1030 Z" fill="#f3f3f3" stroke="#111" stroke-width="1.2"/>
+  <text x="1044" y="483" class="alt">alt</text>
+  <text x="1100" y="483" class="small">ML service available</text>
+  <line x1="665" y1="520" x2="1160" y2="520" class="msg"/><text x="818" y="509" class="label">5. Request prediction using five indicators</text>
+  <rect x="1153" y="520" width="14" height="58" class="act"/>
+  <line x1="1160" y1="580" x2="665" y2="580" class="return"/><text x="840" y="569" class="small">tier probabilities and ML-support score</text>
+  <line x1="1030" y1="608" x2="1330" y2="608" stroke="#111" stroke-width="1.1" stroke-dasharray="4 4"/>
+  <text x="1044" y="630" class="alt">else</text><text x="1090" y="630" class="small">ML service unavailable: formula score substitutes</text>
+
+  <line x1="665" y1="685" x2="917" y2="685" class="msg"/><text x="720" y="674" class="label">6. Store preliminary risk profile</text>
+  <rect x="910" y="685" width="14" height="50" class="act"/>
+  <line x1="917" y1="735" x2="665" y2="735" class="return"/><text x="775" y="724" class="small">stored profile</text>
+  <line x1="665" y1="780" x2="405" y2="780" class="return"/><text x="465" y="769" class="label">7. Return preliminary profile and tier</text>
+  <line x1="405" y1="825" x2="1460" y2="825" class="msg"/><text x="825" y="814" class="label">8. Display transparent scores, indicators and risk tier</text>
+
+  <!-- manager validation -->
+  <line x1="1460" y1="875" x2="405" y2="875" class="msg"/><text x="830" y="864" class="label">9. Submit manager validation scores and note</text>
+  <line x1="405" y1="915" x2="665" y2="915" class="msg"/><text x="474" y="904" class="label">10. POST validation request</text>
+  <line x1="665" y1="955" x2="917" y2="955" class="msg"/><text x="722" y="944" class="label">11. Update validation and final blended score</text>
+  <line x1="917" y1="990" x2="665" y2="990" class="return"/><text x="770" y="979" class="small">updated risk profile</text>
+  <line x1="665" y1="1030" x2="405" y2="1030" class="return"/><text x="483" y="1019" class="label">12. Return validated final tier</text>
+  <line x1="405" y1="1065" x2="1460" y2="1065" class="msg"/><text x="835" y="1054" class="label">13. Display validated result and manager note</text>
+</svg>

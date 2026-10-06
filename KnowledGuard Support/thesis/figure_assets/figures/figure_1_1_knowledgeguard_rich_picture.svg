@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="white"/>
+  <style>
+    .box { fill:white; stroke:black; stroke-width:3; rx:14; ry:14; }
+    .role { fill:#f2f2f2; stroke:black; stroke-width:3; rx:12; ry:12; }
+    .line { fill:none; stroke:black; stroke-width:3; marker-end:url(#arrow); }
+    .dash { fill:none; stroke:black; stroke-width:2.5; stroke-dasharray:10 7; marker-end:url(#arrow); }
+    .t { font-family:Arial, Helvetica, sans-serif; font-size:25px; fill:black; text-anchor:middle; }
+    .s { font-family:Arial, Helvetica, sans-serif; font-size:20px; fill:black; text-anchor:middle; }
+    .h { font-family:Arial, Helvetica, sans-serif; font-size:30px; font-weight:bold; fill:black; text-anchor:middle; }
+    .note { font-family:Arial, Helvetica, sans-serif; font-size:18px; fill:black; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="black"/></marker>
+  </defs>
+
+  <text x="800" y="48" class="h">KnowledgeGuard assessment-to-transfer workflow</text>
+
+  <!-- Roles -->
+  <rect x="55" y="105" width="235" height="85" class="role"/><text x="172" y="142" class="t">Employee /</text><text x="172" y="170" class="t">knowledge holder</text>
+  <rect x="55" y="295" width="235" height="85" class="role"/><text x="172" y="347" class="t">HR or research user</text>
+  <rect x="55" y="485" width="235" height="85" class="role"/><text x="172" y="537" class="t">Manager</text>
+  <rect x="55" y="675" width="235" height="85" class="role"/><text x="172" y="727" class="t">Backup employee</text>
+
+  <!-- Workflow -->
+  <rect x="385" y="105" width="285" height="105" class="box"/><text x="527" y="143" class="t">Structured assessment</text><text x="527" y="173" class="s">Questionnaire or CSV import</text>
+  <rect x="775" y="105" width="285" height="105" class="box"/><text x="917" y="143" class="t">Risk assessment</text><text x="917" y="173" class="s">Indicators, formula and ML support</text>
+  <rect x="1165" y="105" width="285" height="105" class="box"/><text x="1307" y="143" class="t">Manager review</text><text x="1307" y="173" class="s">Validation and final risk tier</text>
+
+  <rect x="1165" y="350" width="285" height="105" class="box"/><text x="1307" y="388" class="t">KT plan created</text><text x="1307" y="418" class="s">High or critical risk cases</text>
+  <rect x="775" y="350" width="285" height="105" class="box"/><text x="917" y="388" class="t">Transfer activities</text><text x="917" y="418" class="s">Document, shadow, interview, practise</text>
+  <rect x="385" y="350" width="285" height="105" class="box"/><text x="527" y="388" class="t">Evidence and review</text><text x="527" y="418" class="s">Confirmations and competence rating</text>
+
+  <rect x="385" y="595" width="285" height="105" class="box"/><text x="527" y="633" class="t">Manager sign-off</text><text x="527" y="663" class="s">All previous tasks complete</text>
+  <rect x="775" y="595" width="285" height="105" class="box"/><text x="917" y="633" class="t">Score update</text><text x="917" y="663" class="s">KT-related indicators recalculated</text>
+  <rect x="1165" y="595" width="285" height="105" class="box"/><text x="1307" y="633" class="t">Later assessment</text><text x="1307" y="663" class="s">Separately imported reassessment</text>
+
+  <!-- Main workflow arrows -->
+  <path d="M670 157 H775" class="line"/>
+  <path d="M1060 157 H1165" class="line"/>
+  <path d="M1307 210 V350" class="line"/>
+  <path d="M1165 402 H1060" class="line"/>
+  <path d="M775 402 H670" class="line"/>
+  <path d="M527 455 V595" class="line"/>
+  <path d="M670 647 H775" class="line"/>
+  <path d="M1060 647 H1165" class="line"/>
+
+  <!-- Role connections -->
+  <path d="M290 147 H385" class="line"/>
+  <path d="M290 337 H385" class="dash"/>
+  <path d="M290 527 H1165" class="dash"/>
+  <path d="M290 717 H385 V402" class="dash"/>
+
+  <!-- Explanatory notes -->
+  <text x="50" y="820" class="note">Solid arrows: primary workflow. Dashed arrows: role participation.</text>
+  <text x="50" y="850" class="note">A later assessment is not created automatically by KT sign-off; it must be separately imported or submitted.</text>
+</svg>

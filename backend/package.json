@@ -1,0 +1,43 @@
+{
+  "name": "knowledgeguard-backend",
+  "version": "1.0.0",
+  "description": "KnowledgeGuard 3.0 - Knowledge Loss Risk Assessment System - Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/utils/seed.js",
+    "seed:admin": "node src/utils/seedAdmin.js",
+    "test:ahp": "node --test test/ahp.test.js",
+    "test:ai": "node --test test/aiErrors.test.js",
+    "test:workflow": "node --test test/assessmentMapping.test.js test/ktWorkflow.test.js",
+    "verify:isolated-db": "node test/ktDatabaseVerification.js --run-isolated"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.5",
+    "csv-parser": "^3.2.1",
+    "csv-stringify": "^6.7.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.6.2",
+    "groq-sdk": "^0.3.3",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.13",
+    "pdfkit": "^0.15.0",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "supertest": "^7.3.0"
+  }
+}

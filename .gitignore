@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment files — NEVER commit these
+.env
+backend/.env
+frontend/.env
+ml-service/.env
+
+# Build output
+dist/
+build/
+
+# ML model files (large, regenerated on startup)
+ml-service/model.joblib
+ml-service/metrics.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local research records and temporary artifact work
+research/raw/
+archive/temporary/
+tmp/
+
+# Local Codex build and validation artifacts
+.pptx-build/
+.codex-finalizer/
+
+# Do not publish participant data, temporary thesis work, or generated decks
+KnowledGuard Support/archive/temporary/
+KnowledGuard Support/research/raw/
+KnowledGuard Support/docs/Google form links.txt
+KnowledGuard Support/docs/*Responses*.csv
+KnowledGuard Support/docs/organization/
+outputs/

@@ -1,0 +1,31 @@
+Email Address,"For upcoming architecture designs or core system logic, how centralized is the knowledge?",How long would it take to hire and train a replacement to your current level?,Are architecture decision records documented in shared repositories?,"If someone needed to deploy or configure your modules from scratch, is it reproducible?","If your module fails a release deadline, does it block deliverables?","What level of data sensitivity, security governance is embedded in your work?",How many inbound architecture/technical consultation requests do you receive?,Are you the mandatory reviewer or gatekeeper?,The architectural knowledge required for my systems is thoroughly democratized.,All design specifications and decision logs are searchable.
+mohamed@knowledgeguard.demo,solely,4+ months,tribal,broken,blocks major,critical core,8+,sole required,strongly disagree,strongly disagree
+kavindu@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,3-7,one of two,neutral,neutral
+shenal@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,3-7,one of two,neutral,neutral
+dinithi@knowledgeguard.demo,shared with 1,4+ months,100%,automated,blocks major,internal only,0-2,standard,strongly agree,strongly agree
+malithi@knowledgeguard.demo,shared across,4+ months,tribal,broken,blocks major,critical core,8+,sole required,strongly disagree,strongly disagree
+yasith@knowledgeguard.demo,shared across,under 4 weeks,100%,automated,minor,internal only,0-2,standard,strongly agree,strongly disagree
+tharuka@knowledgeguard.demo,shared across,under 4 weeks,100%,automated,minor,internal only,0-2,standard,strongly disagree,strongly agree
+nethmi@knowledgeguard.demo,shared across,4+ months,100%,automated,affects team,internal only,0-2,standard,strongly agree,strongly agree
+kasun@knowledgeguard.demo,solely,4+ months,tribal,broken,blocks major,critical core,8+,sole required,strongly disagree,strongly disagree
+supun@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,3-7,one of two,neutral,neutral
+hasitha@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,3-7,one of two,neutral,neutral
+piumi@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,0-2,one of two,neutral,neutral
+lahiru@knowledgeguard.demo,shared across,under 4 weeks,100%,broken,minor,internal only,0-2,standard,strongly agree,strongly agree
+dulanjali@knowledgeguard.demo,shared across,under 4 weeks,100%,automated,minor,internal only,0-2,sole required,strongly agree,strongly agree
+sandun@knowledgeguard.demo,shared across,under 4 weeks,100%,automated,minor,internal only,0-2,standard,strongly agree,strongly agree
+nuwan@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,3-7,one of two,neutral,neutral
+chamika@knowledgeguard.demo,shared with 1,1-3 months,partial,broken,affects team,high business,3-7,one of two,neutral,neutral
+gayani@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,3-7,sole required,neutral,neutral
+roshan@knowledgeguard.demo,solely,4+ months,tribal,broken,blocks major,critical core,8+,sole required,strongly disagree,strongly disagree
+sachini@knowledgeguard.demo,shared across,under 4 weeks,100%,has gaps,minor,internal only,8+,one of two,strongly agree,strongly disagree
+ashen@knowledgeguard.demo,shared across,under 4 weeks,100%,automated,minor,internal only,3-7,standard,strongly agree,strongly agree
+hiruni@knowledgeguard.demo,shared across,4+ months,tribal,automated,affects team,critical core,0-2,sole required,strongly disagree,strongly disagree
+ruwan@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,3-7,one of two,neutral,neutral
+dilshan@knowledgeguard.demo,solely,4+ months,tribal,broken,blocks major,critical core,8+,one of two,strongly disagree,strongly disagree
+manisha@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,3-7,one of two,neutral,neutral
+osanda@knowledgeguard.demo,shared across,under 4 weeks,100%,automated,minor,internal only,8+,standard,strongly agree,strongly agree
+tharindu@knowledgeguard.demo,solely,4+ months,tribal,broken,blocks major,critical core,8+,sole required,strongly disagree,strongly disagree
+nimasha@knowledgeguard.demo,solely,4+ months,tribal,broken,minor,critical core,8+,sole required,strongly disagree,strongly disagree
+charith@knowledgeguard.demo,solely,4+ months,tribal,broken,blocks major,critical core,8+,sole required,strongly disagree,strongly disagree
+amila@knowledgeguard.demo,shared with 1,1-3 months,partial,has gaps,affects team,high business,3-7,sole required,neutral,strongly disagree

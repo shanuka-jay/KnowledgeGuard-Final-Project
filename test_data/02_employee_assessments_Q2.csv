@@ -1,0 +1,31 @@
+Email Address,Who handles an urgent production incident in your domain?,How much of your work relies on unwritten historical experience?,"During a high-pressure emergency, how useful is the documentation?",How quickly is reference documentation revised after a change?,"If an unresolved breakdown occurs in your domain, what is the impact?",Are you managing single-point-of-failure infrastructure?,How often are you contacted during off-hours or pto?,Can you take uninterrupted leave without checking in?,"We have full redundancy, so my absence during an emergency is fine.",An external contractor or peer could resolve an incident using our docs.
+mohamed@knowledgeguard.demo,only me,mental experience,non-existent,rarely,severe,zero-tolerance,frequently,significant,strongly disagree,strongly agree
+kavindu@knowledgeguard.demo,several,mostly documented,tested,within 24h,negligible,standard,never,no delay,strongly agree,strongly agree
+shenal@knowledgeguard.demo,only me,mental experience,non-existent,rarely,severe,zero-tolerance,frequently,significant,strongly agree,strongly disagree
+dinithi@knowledgeguard.demo,several,mostly documented,tested,within 24h,negligible,standard,never,no delay,strongly agree,strongly agree
+malithi@knowledgeguard.demo,1 backup,mental experience,tested,rarely,moderate,zero-tolerance,frequently,significant,strongly disagree,strongly disagree
+yasith@knowledgeguard.demo,several,mostly documented,tested,within 24h,negligible,standard,never,no delay,strongly agree,strongly agree
+tharuka@knowledgeguard.demo,several,mostly documented,tested,within 24h,negligible,standard,never,no delay,strongly agree,strongly agree
+nethmi@knowledgeguard.demo,several,mostly documented,tested,within 24h,negligible,standard,never,no delay,strongly agree,strongly agree
+kasun@knowledgeguard.demo,only me,mental experience,non-existent,rarely,severe,zero-tolerance,frequently,significant,strongly disagree,strongly disagree
+supun@knowledgeguard.demo,1 backup,equal mix,outdated,when time permits,moderate,high compliance,occasionally,minor,strongly agree,neutral
+hasitha@knowledgeguard.demo,several,equal mix,outdated,when time permits,moderate,high compliance,never,minor,neutral,neutral
+piumi@knowledgeguard.demo,1 backup,equal mix,outdated,when time permits,moderate,high compliance,occasionally,minor,neutral,neutral
+lahiru@knowledgeguard.demo,several,mostly documented,tested,within 24h,negligible,standard,frequently,no delay,strongly agree,strongly agree
+dulanjali@knowledgeguard.demo,several,mostly documented,tested,within 24h,negligible,standard,never,no delay,strongly agree,strongly agree
+sandun@knowledgeguard.demo,several,mostly documented,tested,within 24h,negligible,standard,never,no delay,strongly agree,strongly disagree
+nuwan@knowledgeguard.demo,1 backup,equal mix,outdated,when time permits,moderate,high compliance,occasionally,minor,neutral,neutral
+chamika@knowledgeguard.demo,1 backup,equal mix,outdated,when time permits,moderate,high compliance,occasionally,minor,neutral,neutral
+gayani@knowledgeguard.demo,1 backup,equal mix,outdated,when time permits,moderate,high compliance,occasionally,minor,neutral,neutral
+roshan@knowledgeguard.demo,only me,mental experience,non-existent,rarely,severe,zero-tolerance,frequently,significant,strongly disagree,strongly disagree
+sachini@knowledgeguard.demo,several,mostly documented,tested,within 24h,negligible,standard,never,no delay,strongly agree,strongly agree
+ashen@knowledgeguard.demo,1 backup,mostly documented,tested,within 24h,negligible,standard,never,no delay,strongly agree,strongly agree
+hiruni@knowledgeguard.demo,only me,mental experience,non-existent,rarely,severe,zero-tolerance,frequently,significant,strongly disagree,strongly disagree
+ruwan@knowledgeguard.demo,1 backup,equal mix,outdated,when time permits,moderate,high compliance,occasionally,minor,neutral,neutral
+dilshan@knowledgeguard.demo,only me,mental experience,non-existent,rarely,moderate,zero-tolerance,frequently,significant,strongly disagree,strongly disagree
+manisha@knowledgeguard.demo,1 backup,equal mix,outdated,when time permits,moderate,high compliance,occasionally,minor,neutral,neutral
+osanda@knowledgeguard.demo,several,equal mix,tested,within 24h,severe,standard,never,no delay,strongly agree,strongly agree
+tharindu@knowledgeguard.demo,only me,mental experience,outdated,rarely,severe,standard,frequently,significant,strongly disagree,strongly disagree
+nimasha@knowledgeguard.demo,only me,mental experience,non-existent,rarely,severe,zero-tolerance,frequently,significant,strongly disagree,strongly disagree
+charith@knowledgeguard.demo,only me,mental experience,non-existent,when time permits,severe,zero-tolerance,frequently,significant,strongly disagree,strongly disagree
+amila@knowledgeguard.demo,1 backup,equal mix,outdated,when time permits,moderate,high compliance,occasionally,minor,neutral,neutral

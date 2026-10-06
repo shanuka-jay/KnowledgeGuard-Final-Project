@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-label="KnowledgeGuard activity diagram">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#111"/>
+    </marker>
+    <style>
+      .lane { stroke:#222; stroke-width:1.5; }
+      .header { fill:#e8e8e8; stroke:#222; stroke-width:1.5; }
+      .node { fill:#fff; stroke:#111; stroke-width:1.7; }
+      .decision { fill:#f7f7f7; stroke:#111; stroke-width:1.7; }
+      .flow { fill:none; stroke:#111; stroke-width:1.8; marker-end:url(#arrow); }
+      .dash { fill:none; stroke:#444; stroke-width:1.4; stroke-dasharray:6 5; }
+      .title { font:700 25px Arial, sans-serif; fill:#111; }
+      .laneText { font:700 17px Arial, sans-serif; fill:#111; text-anchor:middle; }
+      .nodeText { font:15px Arial, sans-serif; fill:#111; text-anchor:middle; }
+      .small { font:13px Arial, sans-serif; fill:#111; text-anchor:middle; }
+      .label { font:700 13px Arial, sans-serif; fill:#111; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="1120" fill="#ffffff"/>
+
+  <text x="800" y="34" class="title" text-anchor="middle">KnowledgeGuard Assessment, Validation and Knowledge-Transfer Workflow</text>
+
+  <!-- Swimlanes -->
+  <rect x="20" y="60" width="245" height="1010" fill="#fafafa" class="lane"/>
+  <rect x="265" y="60" width="330" height="1010" fill="#f5f5f5" class="lane"/>
+  <rect x="595" y="60" width="310" height="1010" fill="#fafafa" class="lane"/>
+  <rect x="905" y="60" width="300" height="1010" fill="#f5f5f5" class="lane"/>
+  <rect x="1205" y="60" width="375" height="1010" fill="#fafafa" class="lane"/>
+
+  <rect x="20" y="60" width="245" height="46" class="header"/>
+  <rect x="265" y="60" width="330" height="46" class="header"/>
+  <rect x="595" y="60" width="310" height="46" class="header"/>
+  <rect x="905" y="60" width="300" height="46" class="header"/>
+  <rect x="1205" y="60" width="375" height="46" class="header"/>
+  <text x="142" y="89" class="laneText">HR User</text>
+  <text x="430" y="89" class="laneText">System</text>
+  <text x="750" y="89" class="laneText">Manager</text>
+  <text x="1055" y="89" class="laneText">Knowledge Holder</text>
+  <text x="1392" y="89" class="laneText">Backup Employee</text>
+
+  <!-- Input and scoring -->
+  <circle cx="142" cy="145" r="12" fill="#111"/>
+  <rect x="55" y="175" width="175" height="62" rx="8" class="node"/>
+  <text x="142" y="201" class="nodeText"><tspan x="142">Import authorised CSV</tspan><tspan x="142" dy="19">assessment data</tspan></text>
+  <path d="M142 157 V175" class="flow"/>
+
+  <rect x="315" y="175" width="230" height="62" rx="8" class="node"/>
+  <text x="430" y="201" class="nodeText"><tspan x="430">Map responses to indicators</tspan><tspan x="430" dy="19">and calculate tenure</tspan></text>
+  <path d="M230 206 H315" class="flow"/>
+
+  <rect x="315" y="285" width="230" height="70" rx="8" class="node"/>
+  <text x="430" y="311" class="nodeText"><tspan x="430">Calculate formula score</tspan><tspan x="430" dy="19">and ML-support score</tspan><tspan x="430" dy="19">Display preliminary profile</tspan></text>
+  <path d="M430 237 V285" class="flow"/>
+
+  <!-- Manager validation -->
+  <polygon points="750,278 835,330 750,382 665,330" class="decision"/>
+  <text x="750" y="325" class="nodeText"><tspan x="750">Manager</tspan><tspan x="750" dy="18">validates?</tspan></text>
+  <path d="M545 320 H665" class="flow"/>
+
+  <rect x="635" y="430" width="230" height="62" rx="8" class="node"/>
+  <text x="750" y="456" class="nodeText"><tspan x="750">Review indicators and enter</tspan><tspan x="750" dy="19">validation scores and note</tspan></text>
+  <text x="770" y="410" class="label">Yes</text>
+  <path d="M750 382 V430" class="flow"/>
+
+  <rect x="335" y="430" width="190" height="62" rx="8" class="node"/>
+  <text x="430" y="456" class="nodeText"><tspan x="430">Pending manager</tspan><tspan x="430" dy="19">validation</tspan></text>
+  <text x="558" y="346" class="label">No</text>
+  <path d="M665 330 H595 V461 H525" class="flow"/>
+
+  <rect x="315" y="545" width="230" height="62" rx="8" class="node"/>
+  <text x="430" y="570" class="nodeText"><tspan x="430">Recalculate final score</tspan><tspan x="430" dy="19">and display risk tier</tspan></text>
+  <path d="M635 461 H545 V576 H545" class="flow"/>
+
+  <polygon points="750,532 845,587 750,642 655,587" class="decision"/>
+  <text x="750" y="581" class="nodeText"><tspan x="750">High or</tspan><tspan x="750" dy="18">Critical?</tspan></text>
+  <path d="M545 576 H655" class="flow"/>
+
+  <!-- Knowledge transfer -->
+  <rect x="635" y="705" width="230" height="62" rx="8" class="node"/>
+  <text x="750" y="731" class="nodeText"><tspan x="750">Select eligible backup and</tspan><tspan x="750" dy="19">create KT plan</tspan></text>
+  <text x="770" y="680" class="label">Yes</text>
+  <path d="M750 642 V705" class="flow"/>
+
+  <rect x="315" y="705" width="230" height="62" rx="8" class="node"/>
+  <text x="430" y="731" class="nodeText"><tspan x="430">Create five-stage KT task</tspan><tspan x="430" dy="19">chain and interview prompts</tspan></text>
+  <path d="M635 736 H545" class="flow"/>
+
+  <rect x="940" y="805" width="230" height="70" rx="8" class="node"/>
+  <text x="1055" y="831" class="nodeText"><tspan x="1055">Submit documentation evidence</tspan><tspan x="1055" dy="19">and confirm transfer sessions</tspan><tspan x="1055" dy="19">with notes</tspan></text>
+  <path d="M545 736 H900 V840 H940" class="flow"/>
+
+  <rect x="1260" y="805" width="265" height="70" rx="8" class="node"/>
+  <text x="1392" y="831" class="nodeText"><tspan x="1392">Confirm sessions and complete</tspan><tspan x="1392" dy="19">independent practice task</tspan><tspan x="1392" dy="19">as backup employee</tspan></text>
+  <path d="M1170 840 H1260" class="flow"/>
+
+  <rect x="635" y="925" width="230" height="70" rx="8" class="node"/>
+  <text x="750" y="950" class="nodeText"><tspan x="750">Approve evidence, assess</tspan><tspan x="750" dy="19">backup competence and</tspan><tspan x="750" dy="19">sign off when complete</tspan></text>
+  <path d="M1260 840 H1210 V960 H865" class="flow"/>
+
+  <rect x="315" y="925" width="230" height="70" rx="8" class="node"/>
+  <text x="430" y="950" class="nodeText"><tspan x="430">Record KT completion and</tspan><tspan x="430" dy="19">recalculate eligible</tspan><tspan x="430" dy="19">indicator reductions</tspan></text>
+  <path d="M635 960 H545" class="flow"/>
+
+  <rect x="55" y="925" width="175" height="70" rx="8" class="node"/>
+  <text x="142" y="950" class="nodeText"><tspan x="142">Import later assessment</tspan><tspan x="142" dy="19">separately if required</tspan><tspan x="142" dy="19">for review</tspan></text>
+  <path d="M315 960 H230" class="flow"/>
+  <circle cx="142" cy="1030" r="13" fill="none" stroke="#111" stroke-width="2"/>
+  <circle cx="142" cy="1030" r="7" fill="#111"/>
+  <path d="M142 995 V1017" class="flow"/>
+
+  <!-- Low or medium branch -->
+  <text x="885" y="570" class="label">No - routine review</text>
+  <path d="M845 587 H995" class="flow"/>
+  <circle cx="1022" cy="587" r="14" fill="none" stroke="#111" stroke-width="2"/>
+  <circle cx="1022" cy="587" r="7" fill="#111"/>
+
+  <rect x="1180" y="1005" width="330" height="43" fill="#fff" stroke="#444" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="1345" y="1023" class="small"><tspan x="1345">Note: Generated Q1-Q4 records demonstrate workflow behaviour only;</tspan><tspan x="1345" dy="15">they are not real longitudinal employee observations.</tspan></text>
+</svg>
