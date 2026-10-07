@@ -424,19 +424,6 @@ function createKnowledgeGuardForm() {
               </div>
             </div>
 
-            <div className="bg-gray-50 px-6 py-4 border-t border-gray-200">
-              <h4 className="text-xs font-semibold text-gray-900 uppercase tracking-wider mb-3">Expected CSV Formats</h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 text-xs text-gray-600">
-                <div className="flex gap-2">
-                  <span className="font-bold text-gray-900 min-w-[120px]">Employee assessment:</span>
-                  <span>email plus indirect question columns such as backup_coverage, documentation_readiness.</span>
-                </div>
-                <div className="flex gap-2">
-                  <span className="font-bold text-gray-900 min-w-[120px]">Manager validation:</span>
-                  <span>employee_email plus expertise_uniqueness, documentation_gap, manager_notes.</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       )}
