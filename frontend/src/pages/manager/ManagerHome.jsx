@@ -125,15 +125,11 @@ export default function ManagerHome() {
             <div className="space-y-2 overflow-x-auto">
               {sorted.map((member, i) => {
                 const score = member.riskScore?.finalScore
-                let delta = member.riskScore?.scoreDelta
-
-                // --- THESIS DEMO HACK: Inject scoreDelta for screenshot ---
-                if (!delta && i === 0) delta = -3.3;
-                if (!delta && i === 1) delta = -2.6;
-                if (!delta && i === 2) delta = -3.3;
-                // ----------------------------------------------------------
-
-                const dl = deltaLabel(delta)
+                // A score change is shown only after the configured KT workflow
+                // records a verified mitigation impact. Never manufacture a
+                // reduction for demonstration or ranking purposes.
+                const hasVerifiedMitigation = Boolean(member.riskScore?.ktImpact?.appliedAt)
+                const dl = hasVerifiedMitigation ? deltaLabel(member.riskScore?.scoreDelta) : null
                 return (
                   <motion.div
                     key={member._id}
@@ -157,7 +153,7 @@ export default function ManagerHome() {
                       )}
                     </div>
                     <div className="flex items-center gap-2 shrink-0">
-                      {dl && <span className={`text-xs font-medium ${dl.color}`}>{dl.label}</span>}
+                      {dl && <span title="Verified after KT manager sign-off" className={`text-xs font-medium ${dl.color}`}>{dl.label}</span>}
                       <span className="text-sm font-bold text-slate-950 dark:text-white w-9 text-right">{fmtScore(score)}</span>
                       <RiskBadge tier={member.riskScore?.tier} />
                     </div>
@@ -209,4 +205,3 @@ export default function ManagerHome() {
     </Layout>
   )
 }
-

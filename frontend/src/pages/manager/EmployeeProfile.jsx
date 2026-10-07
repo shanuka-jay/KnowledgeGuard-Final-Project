@@ -90,9 +90,9 @@ export default function EmployeeProfile() {
   }
 
   function getSimulatedTier(score) {
-    if (score <= 3.0) return 'low';
-    if (score <= 5.5) return 'medium';
-    if (score <= 7.5) return 'high';
+    if (score <= 5.0) return 'low';
+    if (score <= 7.5) return 'medium';
+    if (score <= 9.0) return 'high';
     return 'critical';
   }
 
@@ -440,7 +440,7 @@ export default function EmployeeProfile() {
         <div className="card">
           <div className="mb-6">
             <h2 className="section-title">What-If Mitigation Simulator</h2>
-            <p className="section-subtitle">Slide the indicators down to simulate how completing a KT plan will reduce the final risk score.</p>
+            <p className="section-subtitle">Explore how targeted knowledge-transfer activities could reduce the formula component of risk. This calculator does not change the saved score.</p>
           </div>
           
           {simScores ? (
@@ -463,12 +463,12 @@ export default function EmployeeProfile() {
               </div>
 
               <div className="flex flex-col justify-center items-center p-8 bg-blue-50 border border-blue-100 rounded-2xl">
-                <p className="text-sm font-semibold text-blue-700 mb-4 uppercase tracking-wide">Simulated Outcome</p>
+                <p className="text-sm font-semibold text-blue-700 mb-4 uppercase tracking-wide">Projected Formula Outcome</p>
                 
                 <div className="flex items-center gap-6 mb-6">
                   <div className="text-center opacity-50">
-                    <p className="text-xs font-bold text-slate-500 mb-1">Current</p>
-                    <p className="text-2xl font-bold line-through text-slate-400">{latest ? fmtScore(latest.finalScore) : '-'}</p>
+                    <p className="text-xs font-bold text-slate-500 mb-1">Current formula</p>
+                    <p className="text-2xl font-bold line-through text-slate-400">{latest ? fmtScore(latest.formulaScore) : '-'}</p>
                   </div>
                   <div className="text-center">
                     <p className="text-xs font-bold text-blue-600 mb-1">Simulated</p>
@@ -477,6 +477,17 @@ export default function EmployeeProfile() {
                 </div>
 
                 <RiskBadge tier={getSimulatedTier(calculateSimulatedScore())} size="lg" />
+                {latest && (
+                  <p className="mt-4 text-sm font-semibold text-emerald-700">
+                    Projected formula reduction: {fmtScore(Math.max(0, latest.formulaScore - calculateSimulatedScore()))}
+                  </p>
+                )}
+                <p className="mt-3 max-w-sm text-center text-xs text-slate-500">
+                  A verified reduction is recorded only after the required KT tasks are completed and a manager signs off the plan.
+                </p>
+                <button onClick={() => navigate(`/manager/kt-plans?employeeId=${employee._id}`)} className="btn-primary mt-5">
+                  Create KT Plan From This Scenario
+                </button>
                 
                 <button onClick={() => setSimScores({
                   expertiseUniqueness: latest.breakdown?.expertiseUniqueness || 5,
@@ -484,7 +495,7 @@ export default function EmployeeProfile() {
                   projectCriticality: latest.breakdown?.projectCriticality || 5,
                   collaborationDependency: latest.breakdown?.collaborationDependency || 5,
                   tenure: latest.breakdown?.tenure || 5
-                })} className="btn-secondary mt-8">Reset to Current</button>
+                })} className="btn-secondary mt-3">Reset to Current</button>
               </div>
             </div>
           ) : (
