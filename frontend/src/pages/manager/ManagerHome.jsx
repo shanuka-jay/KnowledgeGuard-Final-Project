@@ -5,8 +5,8 @@ import Layout from '../../components/ui/Layout'
 import StatCard from '../../components/ui/StatCard'
 import RiskBadge from '../../components/ui/RiskBadge'
 import LoadingSpinner from '../../components/ui/LoadingSpinner'
-import { Users, AlertTriangle, TrendingUp, Clock, ClipboardList, Activity, CheckCircle2, UserCheck, ArrowRight } from 'lucide-react'
-import { fmtScore, deltaLabel, fmtDate } from '../../utils/helpers'
+import { Users, AlertTriangle, TrendingUp, Clock, ClipboardList, Activity, CheckCircle2, UserCheck, ArrowRight, BadgeCheck, TrendingDown } from 'lucide-react'
+import { fmtScore, fmtDate } from '../../utils/helpers'
 import { useNavigate } from 'react-router-dom'
 
 export default function ManagerHome() {
@@ -129,7 +129,7 @@ export default function ManagerHome() {
                 // records a verified mitigation impact. Never manufacture a
                 // reduction for demonstration or ranking purposes.
                 const hasVerifiedMitigation = Boolean(member.riskScore?.ktImpact?.appliedAt)
-                const dl = hasVerifiedMitigation ? deltaLabel(member.riskScore?.scoreDelta) : null
+                const reduction = Number(member.riskScore?.scoreDelta || 0)
                 return (
                   <motion.div
                     key={member._id}
@@ -153,7 +153,16 @@ export default function ManagerHome() {
                       )}
                     </div>
                     <div className="flex items-center gap-2 shrink-0">
-                      {dl && <span title="Verified after KT manager sign-off" className={`text-xs font-medium ${dl.color}`}>{dl.label}</span>}
+                      {hasVerifiedMitigation && (
+                        <div
+                          title="Verified after all required KT tasks and manager sign-off"
+                          className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-emerald-700 dark:border-emerald-400/30 dark:bg-emerald-500/10 dark:text-emerald-300"
+                        >
+                          <BadgeCheck size={13} aria-hidden="true" />
+                          <span>KT verified</span>
+                          {reduction < 0 && <><TrendingDown size={13} aria-hidden="true" /><span>{Math.abs(reduction).toFixed(1)}</span></>}
+                        </div>
+                      )}
                       <span className="text-sm font-bold text-slate-950 dark:text-white w-9 text-right">{fmtScore(score)}</span>
                       <RiskBadge tier={member.riskScore?.tier} />
                     </div>
